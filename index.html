@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar p-top navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <svg
+            width="180px"
+            id="Logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 387.79 120"
+          >
+            <defs>
+              <style>
+                .cls-4 {
+                  fill: #fff;
+                }
+              </style>
+            </defs>
+            <path
+              class="cls-4"
+              d="M35.42,21.93c-13.02,8.41-20.78,22.75-20.77,38.07L0,60.11C-.14,26.89,26.93.06,59.82,0c32.88-.06,60.14,26.67,60.05,60.06h-14.66c.11-16.16-8.7-31.09-22.29-39.09-14.84-8.73-33.15-8.31-47.49.96h0ZM48.29,103.78c24.06,6.39,48.51-7.82,55.21-31.47h15.12c-5.81,27.83-30.41,47.64-58.59,47.69-28.21.05-52.95-19.77-58.78-47.69l15.11.02c4.34,15.3,16.5,27.35,31.92,31.45h0ZM138.13,61.03c-.01,1.51-1.15,2.41-2.4,2.44-1.28.03-2.46-.96-2.46-2.47l-.02-20.98c0-1.47.86-2.61,1.97-2.98,1.39-.47,2.79-.13,3.6,1.1l11.16,16.8.05-15.58c0-1.49.98-2.5,2.32-2.53,1.34-.03,2.46.97,2.46,2.55v21.22c0,.9-.37,1.93-1.06,2.38-1.79,1.14-3.85.37-4.99-1.35l-10.48-15.84-.15,15.26h0ZM201.64,62.51c-5.67,2.22-14.39.87-15.53-6.08-.22-1.37.54-2.49,1.68-2.81,3.14-.86,2.8,3.54,5.13,5.05,2.08,1.34,4.96,1.18,6.99-.14,1.06-.69,1.54-1.78,1.5-2.9-.04-1.16-.81-2.13-1.97-2.69-3.67-1.78-12.77-1.55-12.88-8.73-.04-2.69,1.36-4.95,3.76-6.15,3.54-1.78,9.79-1.85,13.07,1.01,1.31,1.14,2.24,2.69,2.07,4.42-.12,1.18-1.08,1.95-1.98,2.08-2.73.39-2.47-3.14-4.71-4.34-2.57-1.37-7.08-.5-7.3,2.2-.42,5.29,14.81,1.98,15.16,11.41.13,3.41-1.66,6.37-5,7.68h0ZM171.03,59.23c3.34.27,5.9-1.67,6.8-4.75.39-1.34,1.46-2.14,2.71-1.88,1.25.26,2.09,1.41,1.86,2.85-.54,3.48-3.12,6.36-6.59,7.42-3.15.96-6.65.82-9.7-.5-6.15-2.67-7.77-11.12-5.91-17.29,1.49-4.93,5.78-8.03,10.86-8.25,3.27-.15,6.39.75,8.79,2.98,1.27,1.18,2.25,2.63,2.48,4.37.16,1.23-.47,2.34-1.56,2.66-2.88.86-2.82-2.72-5.34-4.64-1.67-1.27-3.85-1.49-6.01-.76-4.93,1.67-5.35,9.23-3.91,13.52.84,2.51,2.89,4.05,5.53,4.26h0ZM74.91,87.77c7.1-5.89,14.14-19.64,6.24-27.6-1.33-1.34-2.8-2.4-4.44-3.34l-5.89-3.4c-3.91-2.25-7.47-6.9-5.06-11.15,2.6-4.58,8.97-3.75,12.83-1.21,5.46,3.58,9.5,8.82,11.74,14.92.15.41.39.77.8.79.37-1.11.04-2.22-.34-3.33-2.72-8.02-9.75-10.01-8.48-12.25.71-1.24,3.09-.29,4.42,1.18.83.91,1.44,1.95,2.42,2.85.55-.39.29-1.13-.11-1.62-2.94-3.56-6.63-6.48-10.88-8.39-6.16-2.77-14.34.99-18.93.32-2.85-.42-5.3-2.38-5.93-5.24-.79-3.66,1.14-7.22,4.49-8.78,6.72-3.12,15.97-.31,22.07,3.21,14.58,8.41,22.8,24.3,20.75,41.16-2.18,17.93-16.1,32.38-33.81,35.38-18.56,3.14-36.88-6.69-44.46-23.92-.88-2-1.39-4.1-1.25-6.33.27-4.28,3.19-7.71,7.41-8.59,6.3-1.32,11.42,3.68,13.37,9.31l1.76,5.08c.96,2.77,2.5,5.17,4.56,7.22,3.02,3,7.18,3.86,11.17,2.36,5.23-1.97,8.26-5.48,11.98-9.29,1.11-1.14,3.5-2.84,4.84-1.68,1.95,1.7-.58,6.34-1.91,8.2-.55.78-4.26,4.82-2.56,5.26,1.08.28,2.35-.41,3.21-1.13h0ZM35.11,72.82c-1.6.33-2.47,1.82-2.03,3.34.35,1.22,1.69,2.2,3.13,1.87,1.35-.31,2.29-1.62,2.03-3.12-.23-1.3-1.52-2.42-3.13-2.09h0ZM38.01,83.69c-.84.29-1.1,1.13-.84,1.72.28.63.93.89,1.59.7.64-.18,1.05-.88.79-1.66-.16-.47-.77-1.03-1.54-.77h0ZM44.42,87.06c-1.08.55-1.28,1.81-.79,2.72s1.61,1.22,2.51.77c.97-.48,1.34-1.59.91-2.56-.4-.91-1.54-1.48-2.64-.93h0ZM75.2,91.91c-.83.26-1.17.99-.87,1.74.18.46.88.94,1.47.75.66-.21,1.11-.81.95-1.51-.13-.57-.75-1.22-1.55-.98h0ZM59.92,93.68c-1.29.52-1.7,2.02-1.17,3.15.47.99,1.76,1.46,2.83,1.05,1.15-.44,1.65-1.78,1.27-2.87-.4-1.15-1.64-1.85-2.93-1.34h0ZM34.67,43.95c2.59-.78,5.06.71,5.7,3.18.6,2.29-.68,4.75-3.08,5.46-2.33.69-4.84-.57-5.6-2.99-.71-2.24.43-4.89,2.98-5.66h0ZM28.03,53.7c1.86-.3,3.31,1.01,3.52,2.58.24,1.73-.9,3.23-2.57,3.5-1.64.26-3.19-.83-3.49-2.46-.3-1.63.7-3.33,2.54-3.62h0ZM247.95,97.05c-1.83.99-3.74.21-4.81-1.41l-10.54-15.94-.1,15.21c0,1.46-.95,2.47-2.28,2.55-1.28.08-2.59-.84-2.59-2.39l-.04-20.95c0-1.45.71-2.61,1.83-3.05,1.32-.52,2.84-.29,3.68.95l11.2,16.82.09-15.62c0-1.45,1.02-2.4,2.25-2.43,1.34-.04,2.51.88,2.51,2.43v21.45c0,.89-.42,1.93-1.21,2.36h0ZM326.01,96.79c-1.49,1.24-3.44.71-4.38-.81l-4.28-6.98c-1.77-2.89-3.6-3.21-6.84-2.94v8.64c0,1.64-1.03,2.74-2.56,2.78-1.49.03-2.68-1.06-2.68-2.8v-20.76c0-1.53,1.08-2.68,2.58-2.67l11.47.05c4.23.02,7.14,3.34,6.93,7.47-.14,2.63-1.47,4.77-3.95,5.79-.66.27-1.37.44-2.16.9,3.1,2.44,5.21,5.73,6.51,9.42.23.64-.12,1.48-.64,1.92h0ZM319.85,81.14c1.22-.98,1.28-2.63.78-3.91-.5-1.26-1.83-2.01-3.32-2.02l-6.8-.05v7.02c2.46-.04,7.38.52,9.34-1.05h0ZM266.86,96.93c-3.34.16-6.43.14-9.63.03-1.39-.05-2.39-1.13-2.39-2.55v-20.69c0-1.45,1.14-2.49,2.52-2.48l9.31.03c4.14.01,7.58,2.43,9.07,6.38,1.51,4.01,1.52,8.65.08,12.71-1.4,3.93-4.78,6.37-8.95,6.58h0ZM270.76,88.84c1.04-3.08,1.06-6.5.08-9.51-1.53-4.7-6.86-3.99-10.75-3.86l.02,17.29c4.24-.03,8.98,1.02,10.65-3.93h0ZM297.97,85.51l-11.27.08v7.2s12.49.04,12.49.04c1.24,0,2.03.92,2.07,2.02.04,1.11-.8,2.15-2.11,2.15h-15.16c-1.45,0-2.59-1.08-2.59-2.56v-20.72c0-1.45,1.13-2.48,2.53-2.48h14.82c1.21-.01,2.02.81,2.07,1.88.05,1.1-.71,2.1-1.99,2.11l-12.14.08v6.24l11.13.04c1.11,0,1.89.78,1.97,1.73.09,1.03-.52,2.19-1.84,2.2h0ZM387.79,88.83c.14,3.55-1.79,6.45-5.04,7.69-5.62,2.14-14.21.89-15.46-6.01-.25-1.39.45-2.56,1.67-2.9,3.15-.87,2.77,3.57,5.16,5.08,2.08,1.32,4.95,1.15,6.95-.18,1.09-.73,1.56-1.8,1.48-3.01-.28-4.23-8.29-2.97-12.58-6.49-1.94-1.59-2.59-3.99-2.07-6.51.43-2.09,2.06-3.95,4.37-4.81,4.29-1.59,11.17-1.39,13.77,3.17.58,1.01.82,2.23.4,3.27-.39.96-1.25,1.42-2.11,1.46-2.35.1-2.28-3.23-4.4-4.37-2.59-1.39-7.21-.49-7.31,2.31-.19,5.13,14.8,1.91,15.16,11.3h0ZM216.99,90.97l-10.47-.07c-.87,2.03-1.27,3.97-2.38,5.74-.67,1.07-2.21.97-3.1.44-1.05-.62-1.5-1.92-1.01-3.17l8.1-20.59c.62-1.57,1.85-2.45,3.33-2.51,1.59-.07,3.08.63,3.75,2.28l8.32,20.6c.53,1.32.17,2.67-.88,3.34-1.11.71-2.72.59-3.43-.65-.94-1.65-1.46-3.33-2.22-5.41h0ZM215.45,86.83l-3.77-10.23-3.78,10.35,7.55-.11h0ZM357.61,90.94l-10.42-.05c-.89,1.9-1.28,3.87-2.35,5.66-.65,1.08-2.09,1.11-3.06.58-1.07-.58-1.65-1.87-1.13-3.17l8.09-20.58c.62-1.57,1.8-2.5,3.29-2.57,1.58-.08,3.13.58,3.79,2.23l8.33,20.6c.55,1.37.21,2.67-.9,3.39-1.09.7-2.71.58-3.42-.69-.93-1.66-1.45-3.35-2.21-5.4h0ZM356.11,86.86l-3.81-10.26-3.75,10.33,7.56-.07h0ZM170.11,90.95l-10.42-.06c-.89,1.89-1.28,3.87-2.35,5.66-.68,1.14-2.23,1.11-3.19.51-1.09-.68-1.47-1.94-.95-3.26l8.03-20.42c.65-1.65,1.9-2.56,3.5-2.58,1.58-.02,2.99.75,3.65,2.4l8.25,20.45c.55,1.36.21,2.67-.9,3.39-1.08.7-2.71.58-3.42-.69-.93-1.66-1.45-3.35-2.21-5.41h0ZM168.63,86.91l-3.84-10.32-3.76,10.35,7.6-.04h0ZM199.52,74.24l-7.64,20.72c-.6,1.62-1.95,2.48-3.47,2.51-1.63.03-3.01-.89-3.63-2.58l-7.52-20.48c-.56-1.53.18-3.03,1.5-3.45,1.69-.54,2.88.26,3.44,1.92l6.27,18.27,6.29-18.39c.41-1.49,1.64-2.23,3.11-1.85,1.22.32,2.24,1.72,1.65,3.33h0ZM149.85,96.99h-13.72c-1.35,0-2.53-1-2.53-2.39l-.02-21.1c0-1.63,1.16-2.7,2.6-2.69,1.44,0,2.62,1.06,2.62,2.7l.06,19.19,11.14.05c1.2,0,1.95,1.06,1.99,2.06.04,1.05-.76,2.17-2.14,2.17h0ZM336.61,94.58c0,1.74-1.09,2.84-2.54,2.88-1.34.05-2.67-.95-2.68-2.57v-21.43c-.01-1.6,1.13-2.61,2.47-2.65,1.45-.05,2.73.99,2.73,2.65l.02,21.12h0ZM335.11,67.92c-2.1,2.1-4.88,1.94-4.19.66,1-1.84,1.77-4.1,3.52-4.05,1.23.03,2.43-.15,3.72.13-.78,1.37-2,2.21-3.06,3.26h0Z"
+            />
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <header
+            class="hero-section"
+            style="background-image: url(bg-ncs.webp)"
+          >
+            <div class="overlay">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-10 -10 1259.75 1251.18"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      mix-blend-mode: screen;
+                      opacity: 0.4;
+                      stroke: #66d2f2;
+                      stroke-miterlimit: 10;
+                      stroke-width: 2.5px;
+                    }
+
+                    .cls-2 {
+                      isolation: isolate;
+                    }
+                  </style>
+                </defs>
+                <g class="cls-2">
+                  <g id="Extras_02" data-name="Extras 02">
+                    <g class="outer-ring">
+                      <path
+                        class="cls-1"
+                        d="M357.98,216.66c-131.13,84.74-209.3,229.11-209.14,383.46l-147.56,1.04c22.66-799.2,1183.47-800.4,1207.18-.49l-147.69-.02c6.4-356.17-409.46-581.02-702.8-383.99Z"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M166.11,724.3l-152.23-.23c136.09,634.84,1046.38,634.16,1182-.09l-152.24.08c-123.51,438.81-753.24,439.49-877.53.24Z"
+                      />
+                    </g>
+                    <g class="inner-wave">
+                      <g>
+                        <path
+                          class="cls-1"
+                          d="M723.43,891.09c-17.04-4.46,20.23-45.12,25.82-52.97,13.34-18.73,38.84-65.46,19.21-82.56-13.5-11.76-37.63,5.44-48.79,16.9-55.82,63.42-153.42,147.4-233.09,69.79-35.34-32.54-48.73-79.84-63.62-123.88-19.63-56.76-71.26-107.04-134.68-93.78-42.42,8.87-71.83,43.46-74.58,86.55-1.43,22.4,3.7,43.59,12.57,63.74,76.4,173.54,260.92,272.54,447.79,240.92,382.33-64.03,468.58-582.45,131.49-770.9-61.38-35.38-154.56-63.69-222.26-32.28-66.56,29.71-62.12,130.25,14.44,141.16,46.24,6.78,128.67-31.03,190.66-3.17,42.83,19.25,80.01,48.69,109.59,84.5,4.05,4.9,6.65,12.34,1.15,16.27-9.92-9-16.04-19.5-24.38-28.66-13.45-14.77-37.44-24.4-44.56-11.88-12.82,22.55,58,42.55,85.39,123.34,3.79,11.17,7.14,22.3,3.43,33.49-4.08-.22-6.52-3.91-8.01-7.99-22.55-61.44-63.25-114.21-118.22-150.31-113.34-70.54-198.61,52.61-78.26,124.48,29.88,18.2,80.22,42.31,104.06,67.9,79.57,80.14,8.75,218.62-62.81,277.98-8.65,7.18-21.42,14.21-32.34,11.35Z"
+                        />
+                        <path
+                          class="cls-1"
+                          d="M386.49,750.23c4.86,34.98-41.91,44.07-51.98,12.61-9.58-36.64,44.86-47.85,51.98-12.61Z"
+                        />
+                        <path
+                          class="cls-1"
+                          d="M399.55,846.44c2.7,7.91-1.42,14.88-7.9,16.72-16.04,4.73-24.8-17.96-7.6-24.45,7.75-2.64,13.91,3.05,15.51,7.73Z"
+                        />
+                        <path
+                          class="cls-1"
+                          d="M475.2,882c9.81,22.54-21.85,39.29-34.53,18.03-12.44-24.49,22.4-42.21,34.53-18.03Z"
+                        />
+                        <path
+                          class="cls-1"
+                          d="M774.26,931.28c1.64,7.07-2.84,13.15-9.52,15.25-5.96,1.88-12.98-2.98-14.84-7.6-6.45-17.64,19.54-25.87,24.36-7.65Z"
+                        />
+                        <path
+                          class="cls-1"
+                          d="M634.31,952.76c8.52,27.31-27.52,42.57-41.32,18.27-12.81-29.34,29.4-48.31,41.32-18.27Z"
+                        />
+                      </g>
+                      <path
+                        class="cls-1"
+                        d="M320.44,495.42c19.61,56.27,100.82,31.55,87.47-24.92-17.24-59.74-104.32-33.83-87.47,24.92Z"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M258.05,573.1c8.43,39.02,65.86,29.74,61.06-10.45-7.05-41.07-67.56-31.26-61.06,10.45Z"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="container" data-speed="1.3">
+              <div class="hero-content">
+                <p class="color-light">
+                  18 AÑOS DE EXPERIENCIA OPERATIVA EN GESTIÓN TEXTIL
+                </p>
+                <h1 class="my-4 t-h1">
+                  Lavandería Industrial al servicio de tu empresa
+                </h1>
+                <p class="p-1">
+                  Somos NCS, partner operativo en lavandería industrial para
+                  empresas que no pueden fallar. Retiramos, procesamos y
+                  entregamos con logística propia, sin que tengas que coordinar
+                  nada.
+                </p>
+                <div class="cta-section">
+                  <a class="btn btn-custom">Ver más</a>
+                  <a class="btn btn-custom"
+                    ><i class="bi bi-whatsapp"></i>Hablemos</a
+                  >
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <section>
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-title text-center mb-4">
+                  Nuestros Servicios
+                </h2>
+                <p class="t-h2 mb-5">¿Qué hacemos por tu empresa?</p>
+              </div>
+              <div
+                class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center blog-loop g-3"
+              >
+                <div class="col">
+                  <div class="card-custom2 text-center">
+                    <img
+                      src="/icons/icon-fabrica.webp"
+                      class="icon-card mb-2"
+                      alt="Imagen destacada del artículo Card Title 1"
+                    />
+                    <h3 class="t-h3">Lavado Industrial</h3>
+                    <p class="mb-2">
+                      Establecemos relaciones
+                      <b>confiables y de largo plazo</b> con nuestros clientes
+                      institucionales, integrando logistica
+                      <b>ajustados a la realidad de su empresa.</b>
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-custom2 text-center">
+                    <img
+                      src="/icons/icon-shirt.webp"
+                      class="icon-card mb-2"
+                      alt="Imagen destacada del artículo Card Title 1"
+                    />
+                    <h3 class="t-h3">Administración de Ropería</h3>
+                    <p class="mb-2">
+                      Nos especializamos en servicios de ropería personalizados,
+                      desde la administración completa de prendas hasta la
+                      operación de nuestros clientes.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-custom2 text-center">
+                    <img
+                      src="icons/icon-globe.webp"
+                      class="icon-card mb-2"
+                      alt="Imagen destacada del artículo Card Title 1"
+                    />
+                    <h3 class="t-h3">Smart Cabinet</h3>
+                    <p class="mb-2">
+                      Implementamos <b>tecnología automatizada</b> para la
+                      administración, control y seguimiento de las prendas de
+                      nuestros clientes.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-custom2 text-center">
+                    <img
+                      src="icons/icon-bus.webp"
+                      class="icon-card mb-2"
+                      alt="Imagen destacada del artículo Card Title 1"
+                    />
+                    <h3 class="t-h3">Lavandería a Domicilio</h3>
+                    <p class="mb-2">
+                      En Lavanderías NCS entregamos servicios para personas y
+                      empresas grandes y pequeñas. <b>Retiramos y entregamos donde
+                      necesites.</b>
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-custom2 text-center">
+                    <img
+                      src="/icons/icon-ticket.webp"
+                      class="icon-card mb-2"
+                      alt="Imagen destacada del artículo Card Title 1"
+                    />
+                    <h3 class="t-h3">Procesos a medida</h3>
+                    <p class="mb-2">
+                      Cada cliente es distinto. Nos sentamos contigo a construir
+                      un proceso de primer nivel para la necesidad de tus
+                      operaciones
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                  <h2 class="t-h2 mb-4">
+                    Lavandería industrial con procesos de primer nivel
+                  </h2>
+                  <p>
+                    Todos los procesos que implementamos para la atención de
+                    nuestros contratos de servicios, buscan incorporar
+                    tecnologías de última generación, tanto en procesos de
+                    lavado, logística, control de gestión y administración de
+                    roperías, ajustados a los requerimientos de nuestros
+                    clientes.
+                  </p>
+                  <a class="btn btn-custom mt-3">Ver más</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <div class="border-right"></div>
+                </div>
+                <div class="col-lg-5">
+                  <p class="section-separator">01</p>
+                  <h3 class="t-h3">Capacidad instalada</h3>
+                  <p class="mb-5">
+                    Contamos con una planta industrial de hasta 10.000 kg de
+                    lavado al día. Si tu volumen sube, lo absorbemos. Tu
+                    operación no para.
+                  </p>
+                  <p class="section-separator">02</p>
+                  <h3 class="t-h3">Logística propia</h3>
+                  <p class="mb-5">
+                    Gestionamos con recursos propios la cadena logística
+                    completa desde la recepción de prendas para lavado, hasta la
+                    entrega de ropa limpia.
+                  </p>
+                  <p class="section-separator">03</p>
+                  <h3 class="t-h3">Cuidamos el planeta</h3>
+                  <p>
+                    Nuestros procesos buscan calidad y eficiencia para nuestros
+                    clientes, y sobre todo, generar el menor impacto posible en
+                    el ecosistema, disminuyendo nuestra huella de carbono.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-title text-center mb-4">
+                  la experiencia de NCS
+                </h2>
+                <p class="t-h2">Servicios de lavandería a domicilio</p>
+                <div class="section-content">
+                  <p>
+                    Ponemos a disposición de clientes particulares toda la
+                    experiencia de NCS en el lavado de textiles, logística
+                    integrada y precios competitivos en esta industria.
+                    Contáctanos y nosotros nos encargaremos del resto.
+                  </p>
+                  <div>
+                    <a class="btn btn-custom mt-3" href="#">Contáctanos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-color">
+            <div class="container text-center">
+              <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 justify-content-center g-4">
+                <div class="col">
+                  <p class="t-h1 mb-4">14</p>
+                  <p>Años de experiencia</p>
+                </div>
+
+                <div class="col">
+                  <p class="t-h1 mb-4">+7500</p>
+                  <p>Prendas lavadas al mes</p>
+                </div>
+
+                <div class="col">
+                  <p class="t-h1 mb-4">25</p>
+                  <p>Equipos Humanos</p>
+                </div>
+
+                <div class="col">
+                  <p class="t-h1 mb-4">6</p>
+                  <p>Roperías Administradas</p>
+                </div>
+
+                <div class="col">
+                  <p class="t-h1 mb-4">1</p>
+                  <p>Planta Industrial</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-title text-center mb-4">
+                  Lavandería Industrial Especializada
+                </h2>
+                <p class="t-h2 mb-4">¿Cómo sería trabajar con NCS?</p>
+          
+                  <div style="max-width: 800px; margin: auto;">
+                    <p >
+                      En NCS Lavanderías creamos procesos logísticos
+                      particulares a cada cliente gracias a nuestra integración
+                      de servicios de lavado industrial + secado con transporte
+                      especializado.
+                    </p>
+                    <p class="mb-4">
+                      Contacta a nuestro equipo y planifiquemos un proceso de
+                      clasificación lavado y planchado que se ajuste a los
+                      requerimientos de tus operaciones
+                    </p>
+                    <a class="btn btn-custom mb-5">Ver Detalles</a>
+                  </div>
+
+                
+                  <div >
+                    <h3 class="t-h3 mb-4">
+                      Nuestro flujo de trabajo adaptado a tus necesidades
+                    </h3>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3">
+                      <div class="col">
+                        <div class="custom-card p-3 ">
+                          <img src="icons/icon-shirt.webp" class="icon-card mb-2 mx-auto" alt="Imagen destacada del artículo Card Title 1" />
+                        Revisión y Clasificación</div></div>
+                      <div class="col">
+                                    <div class="custom-card p-3">
+                          <img src="icons/icon-globos.webp" class="icon-card mb-2 mx-auto" alt="Imagen destacada del artículo Card Title 2" />
+                          Lavado y Secado</div></div>
+                      <div class="col">
+                        <div class="custom-card p-3">
+                          <img src="icons/icon-transport.webp" class="icon-card mb-2 mx-auto" alt="Imagen destacada del artículo Card Title 3" />
+                            Planchado y Doblado</div></div>
+                      <div class="col">
+                        <div class="custom-card p-3">
+                          <img src="icons/icon-bus.webp" class="icon-card mb-2 mx-auto " alt="Imagen destacada del artículo Card Title 4" />
+                          Organización y Despacho</div></div>
+                    </div>
+                  </div>
+          
+            </div>
+          </section>
+
+
+          
+<section>
+              <div class="container custom-card p-5 text-center" style="background: #ebeaf7 !important;">
+
+<h2 class="section-title text-center mb-4">
+Nuestros clientes
+</h2>
+  <p class="t-h2">Confían en nosotros instituciones que
+  no pueden darse el lujo de fallar
+</p>
+<p>
+Desde hoteles internacionales hasta las Fuerzas Armadas de Chile. Cuando el estándar no tiene margen de error, nos
+eligen a nosotros.
+</p>
+<div class="row-logos" style="overflow:hidden; position:relative; padding: 1.5rem 0 0.5rem;">
+  <div
+    style="content:''; position:absolute; top:0; left:0; width:80px; height:100%; background:linear-gradient(to right, #ebeaf7, transparent); z-index:2; pointer-events:none;">
+  </div>
+  <div
+    style="content:''; position:absolute; top:0; right:0; width:80px; height:100%; background:linear-gradient(to left, #ebeaf7, transparent); z-index:2; pointer-events:none;">
+  </div>
+
+  <div class="marquee-track"
+   >
+    <!-- logos × 2 para loop continuo -->
+    <!-- bloque 1 -->
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2024/03/ncslavanderia_logo_cliente-10.png" alt="Cliente" />
+    </div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-07.png"
+        alt="Holiday Inn" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-09.png"
+        alt="Escuela Militar" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-05.png"
+        alt="Carabineros" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-08.png" alt="Cliente" />
+    </div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-06.png"
+        alt="Hotel Panamericana" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-04.png"
+        alt="Esc. Carabineros" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-03.png"
+        alt="Rent Aparts" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-02.png"
+        alt="Golf Los Leones" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-01.png" alt="Ariztía" />
+    </div>
+    <!-- bloque 2 (duplicado para loop sin salto) -->
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2024/03/ncslavanderia_logo_cliente-10.png" alt="Cliente" />
+    </div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-07.png"
+        alt="Holiday Inn" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-09.png"
+        alt="Escuela Militar" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-05.png"
+        alt="Carabineros" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-08.png" alt="Cliente" />
+    </div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-06.png"
+        alt="Hotel Panamericana" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-04.png"
+        alt="Esc. Carabineros" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-03.png"
+        alt="Rent Aparts" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-02.png"
+        alt="Golf Los Leones" /></div>
+    <div class="logo-item"><img
+        src="https://ncslavanderias.cl/wp-content/uploads/2022/11/ncslavanderia_logo_clientes-01.png" alt="Ariztía" />
+    </div>
+  </div>
+</div>
+</section>
+          <section>
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-title text-center mb-4">
+                  la actualidad de NCS en nuestro blog
+                </h2>
+                <p class="t-h2 mb-4"> Descubre las últimas noticias y actualizaciones sobre nuestros servicios y proyectos </p>
+              </div>
+              <div
+                class="row row-cols-1 row-cols-md-2 row-cols-lg-3 blog-loop g-3"
+              >
+                <div class="col">
+                  <article class="card mb-4 custom-card">
+                    <a
+                      href="/blog/card-title-1"
+                      class="card-img-link"
+                      aria-label="Leer el artículo Card Title 1"
+                    >
+                      <img
+                        src="placeholder.webp"
+                        class="card-img-top"
+                        alt="Imagen destacada del artículo Card Title 1"
+                      />
+                    </a>
+
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <a href="/blog/card-title-1" class="card-btn-link">
+                          Una entrada de blog que se parte en varias lineas
+                        </a>
+                      </h3>
+
+                      <p class="author-name">
+                        Por
+                        <a href="/autor/author-name" rel="author"
+                          >Author Name</a
+                        >
+                        ·
+                        <time datetime="2026-04-16">16 abril 2026</time>
+                      </p>
+
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <ul
+                        class="category-tags"
+                        aria-label="Categorías del artículo"
+                      >
+                        <li>
+                          <a
+                            href="/categoria/category"
+                            class="category-tag"
+                            rel="tag"
+                            >category</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="card mb-4 custom-card">
+                    <a
+                      href="/blog/card-title-1"
+                      class="card-img-link"
+                      aria-label="Leer el artículo Card Title 1"
+                    >
+                      <img
+                        src="placeholder.webp"
+                        class="card-img-top"
+                        alt="Imagen destacada del artículo Card Title 1"
+                      />
+                    </a>
+
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <a href="/blog/card-title-1" class="card-btn-link">
+                          Una entrada de blog
+                        </a>
+                      </h3>
+
+                      <p class="author-name">
+                        Por
+                        <a href="/autor/author-name" rel="author"
+                          >Author Name</a
+                        >
+                        ·
+                        <time datetime="2026-04-16">16 abril 2026</time>
+                      </p>
+
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <ul
+                        class="category-tags"
+                        aria-label="Categorías del artículo"
+                      >
+                        <li>
+                          <a
+                            href="/categoria/category"
+                            class="category-tag"
+                            rel="tag"
+                            >category</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col">
+                  <article class="card mb-4 custom-card">
+                    <a
+                      href="/blog/card-title-1"
+                      class="card-img-link"
+                      aria-label="Leer el artículo Card Title 1"
+                    >
+                      <img
+                        src="placeholder.webp"
+                        class="card-img-top"
+                        alt="Imagen destacada del artículo Card Title 1"
+                      />
+                    </a>
+
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <a href="/blog/card-title-1" class="card-btn-link">
+                          Una entrada de blog
+                        </a>
+                      </h3>
+
+                      <p class="author-name">
+                        Por
+                        <a href="/autor/author-name" rel="author"
+                          >Author Name</a
+                        >
+                        ·
+                        <time datetime="2026-04-16">16 abril 2026</time>
+                      </p>
+
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <ul
+                        class="category-tags"
+                        aria-label="Categorías del artículo"
+                      >
+                        <li>
+                          <a
+                            href="/categoria/category"
+                            class="category-tag"
+                            rel="tag"
+                            >category</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a class="t-h3" href="#">Ver más artículos</a>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="row g-5">
+                <div class="col-12">
+                  <span class="section-title mb-4">¿Tu empresa necesita lavandería industrial?</span>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                <h2 class="t-h2 mb-4">Ponte en contacto</h2>
+                <p>Estamos esperando tu contacto para que podamos conversar y ver cómo nuestros servicios se pueden ajustar a tus
+                necesidades de lavado y servicios.</p>
+                <div>
+                  <h3 class="t-h3 mb-4">Nuestra Planta Industrial</h3>
+                    
+                  <p>
+                    Obispo Arturo Espinoza Campos 2686 <br />
+                    Macul, Santiago, Chile
+                  </p>
+                  <h3 class="t-h3 mb-4">Hablanos directamente</h3>
+                  <p>(+56) 9 7548 4039</p>
+                  <p><a href="mailto:info@ncslavanderias.cl">info@ncslavanderias.cl</a></p>
+                </div>
+              </div>
+                  <div class="col-12 col-lg-6">
+                    <h3 class="t-h3 mb-4">Formulario de contacto</h3>
+             <input type="text" class="form-control mb-3" placeholder="Nombre completo" />
+             <input type="email" class="form-control mb-3" placeholder="Correo electrónico" />
+                      <input type="phone" class="form-control mb-3" placeholder="Número de teléfono" />
+             <textarea class="form-control mb-3" rows="5" placeholder="Cuéntanos qué necesitas"></textarea>
+             <button class="btn btn-custom">Enviar mensaje</button>
+                  </div>
+              </div>
+              </div>
+        
+          </section>
+
+        </main>
+                  <footer class="bg-color py-5" style="min-height:400px;">
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                          <h3 class="t-h3 mb-4"><svg width="180px" id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.79 120">
+                            <defs>
+                              <style>
+                                .cls-4 {
+                                  fill: #fff;
+                                }
+                              </style>
+                            </defs>
+                            <path class="cls-4"
+                              d="M35.42,21.93c-13.02,8.41-20.78,22.75-20.77,38.07L0,60.11C-.14,26.89,26.93.06,59.82,0c32.88-.06,60.14,26.67,60.05,60.06h-14.66c.11-16.16-8.7-31.09-22.29-39.09-14.84-8.73-33.15-8.31-47.49.96h0ZM48.29,103.78c24.06,6.39,48.51-7.82,55.21-31.47h15.12c-5.81,27.83-30.41,47.64-58.59,47.69-28.21.05-52.95-19.77-58.78-47.69l15.11.02c4.34,15.3,16.5,27.35,31.92,31.45h0ZM138.13,61.03c-.01,1.51-1.15,2.41-2.4,2.44-1.28.03-2.46-.96-2.46-2.47l-.02-20.98c0-1.47.86-2.61,1.97-2.98,1.39-.47,2.79-.13,3.6,1.1l11.16,16.8.05-15.58c0-1.49.98-2.5,2.32-2.53,1.34-.03,2.46.97,2.46,2.55v21.22c0,.9-.37,1.93-1.06,2.38-1.79,1.14-3.85.37-4.99-1.35l-10.48-15.84-.15,15.26h0ZM201.64,62.51c-5.67,2.22-14.39.87-15.53-6.08-.22-1.37.54-2.49,1.68-2.81,3.14-.86,2.8,3.54,5.13,5.05,2.08,1.34,4.96,1.18,6.99-.14,1.06-.69,1.54-1.78,1.5-2.9-.04-1.16-.81-2.13-1.97-2.69-3.67-1.78-12.77-1.55-12.88-8.73-.04-2.69,1.36-4.95,3.76-6.15,3.54-1.78,9.79-1.85,13.07,1.01,1.31,1.14,2.24,2.69,2.07,4.42-.12,1.18-1.08,1.95-1.98,2.08-2.73.39-2.47-3.14-4.71-4.34-2.57-1.37-7.08-.5-7.3,2.2-.42,5.29,14.81,1.98,15.16,11.41.13,3.41-1.66,6.37-5,7.68h0ZM171.03,59.23c3.34.27,5.9-1.67,6.8-4.75.39-1.34,1.46-2.14,2.71-1.88,1.25.26,2.09,1.41,1.86,2.85-.54,3.48-3.12,6.36-6.59,7.42-3.15.96-6.65.82-9.7-.5-6.15-2.67-7.77-11.12-5.91-17.29,1.49-4.93,5.78-8.03,10.86-8.25,3.27-.15,6.39.75,8.79,2.98,1.27,1.18,2.25,2.63,2.48,4.37.16,1.23-.47,2.34-1.56,2.66-2.88.86-2.82-2.72-5.34-4.64-1.67-1.27-3.85-1.49-6.01-.76-4.93,1.67-5.35,9.23-3.91,13.52.84,2.51,2.89,4.05,5.53,4.26h0ZM74.91,87.77c7.1-5.89,14.14-19.64,6.24-27.6-1.33-1.34-2.8-2.4-4.44-3.34l-5.89-3.4c-3.91-2.25-7.47-6.9-5.06-11.15,2.6-4.58,8.97-3.75,12.83-1.21,5.46,3.58,9.5,8.82,11.74,14.92.15.41.39.77.8.79.37-1.11.04-2.22-.34-3.33-2.72-8.02-9.75-10.01-8.48-12.25.71-1.24,3.09-.29,4.42,1.18.83.91,1.44,1.95,2.42,2.85.55-.39.29-1.13-.11-1.62-2.94-3.56-6.63-6.48-10.88-8.39-6.16-2.77-14.34.99-18.93.32-2.85-.42-5.3-2.38-5.93-5.24-.79-3.66,1.14-7.22,4.49-8.78,6.72-3.12,15.97-.31,22.07,3.21,14.58,8.41,22.8,24.3,20.75,41.16-2.18,17.93-16.1,32.38-33.81,35.38-18.56,3.14-36.88-6.69-44.46-23.92-.88-2-1.39-4.1-1.25-6.33.27-4.28,3.19-7.71,7.41-8.59,6.3-1.32,11.42,3.68,13.37,9.31l1.76,5.08c.96,2.77,2.5,5.17,4.56,7.22,3.02,3,7.18,3.86,11.17,2.36,5.23-1.97,8.26-5.48,11.98-9.29,1.11-1.14,3.5-2.84,4.84-1.68,1.95,1.7-.58,6.34-1.91,8.2-.55.78-4.26,4.82-2.56,5.26,1.08.28,2.35-.41,3.21-1.13h0ZM35.11,72.82c-1.6.33-2.47,1.82-2.03,3.34.35,1.22,1.69,2.2,3.13,1.87,1.35-.31,2.29-1.62,2.03-3.12-.23-1.3-1.52-2.42-3.13-2.09h0ZM38.01,83.69c-.84.29-1.1,1.13-.84,1.72.28.63.93.89,1.59.7.64-.18,1.05-.88.79-1.66-.16-.47-.77-1.03-1.54-.77h0ZM44.42,87.06c-1.08.55-1.28,1.81-.79,2.72s1.61,1.22,2.51.77c.97-.48,1.34-1.59.91-2.56-.4-.91-1.54-1.48-2.64-.93h0ZM75.2,91.91c-.83.26-1.17.99-.87,1.74.18.46.88.94,1.47.75.66-.21,1.11-.81.95-1.51-.13-.57-.75-1.22-1.55-.98h0ZM59.92,93.68c-1.29.52-1.7,2.02-1.17,3.15.47.99,1.76,1.46,2.83,1.05,1.15-.44,1.65-1.78,1.27-2.87-.4-1.15-1.64-1.85-2.93-1.34h0ZM34.67,43.95c2.59-.78,5.06.71,5.7,3.18.6,2.29-.68,4.75-3.08,5.46-2.33.69-4.84-.57-5.6-2.99-.71-2.24.43-4.89,2.98-5.66h0ZM28.03,53.7c1.86-.3,3.31,1.01,3.52,2.58.24,1.73-.9,3.23-2.57,3.5-1.64.26-3.19-.83-3.49-2.46-.3-1.63.7-3.33,2.54-3.62h0ZM247.95,97.05c-1.83.99-3.74.21-4.81-1.41l-10.54-15.94-.1,15.21c0,1.46-.95,2.47-2.28,2.55-1.28.08-2.59-.84-2.59-2.39l-.04-20.95c0-1.45.71-2.61,1.83-3.05,1.32-.52,2.84-.29,3.68.95l11.2,16.82.09-15.62c0-1.45,1.02-2.4,2.25-2.43,1.34-.04,2.51.88,2.51,2.43v21.45c0,.89-.42,1.93-1.21,2.36h0ZM326.01,96.79c-1.49,1.24-3.44.71-4.38-.81l-4.28-6.98c-1.77-2.89-3.6-3.21-6.84-2.94v8.64c0,1.64-1.03,2.74-2.56,2.78-1.49.03-2.68-1.06-2.68-2.8v-20.76c0-1.53,1.08-2.68,2.58-2.67l11.47.05c4.23.02,7.14,3.34,6.93,7.47-.14,2.63-1.47,4.77-3.95,5.79-.66.27-1.37.44-2.16.9,3.1,2.44,5.21,5.73,6.51,9.42.23.64-.12,1.48-.64,1.92h0ZM319.85,81.14c1.22-.98,1.28-2.63.78-3.91-.5-1.26-1.83-2.01-3.32-2.02l-6.8-.05v7.02c2.46-.04,7.38.52,9.34-1.05h0ZM266.86,96.93c-3.34.16-6.43.14-9.63.03-1.39-.05-2.39-1.13-2.39-2.55v-20.69c0-1.45,1.14-2.49,2.52-2.48l9.31.03c4.14.01,7.58,2.43,9.07,6.38,1.51,4.01,1.52,8.65.08,12.71-1.4,3.93-4.78,6.37-8.95,6.58h0ZM270.76,88.84c1.04-3.08,1.06-6.5.08-9.51-1.53-4.7-6.86-3.99-10.75-3.86l.02,17.29c4.24-.03,8.98,1.02,10.65-3.93h0ZM297.97,85.51l-11.27.08v7.2s12.49.04,12.49.04c1.24,0,2.03.92,2.07,2.02.04,1.11-.8,2.15-2.11,2.15h-15.16c-1.45,0-2.59-1.08-2.59-2.56v-20.72c0-1.45,1.13-2.48,2.53-2.48h14.82c1.21-.01,2.02.81,2.07,1.88.05,1.1-.71,2.1-1.99,2.11l-12.14.08v6.24l11.13.04c1.11,0,1.89.78,1.97,1.73.09,1.03-.52,2.19-1.84,2.2h0ZM387.79,88.83c.14,3.55-1.79,6.45-5.04,7.69-5.62,2.14-14.21.89-15.46-6.01-.25-1.39.45-2.56,1.67-2.9,3.15-.87,2.77,3.57,5.16,5.08,2.08,1.32,4.95,1.15,6.95-.18,1.09-.73,1.56-1.8,1.48-3.01-.28-4.23-8.29-2.97-12.58-6.49-1.94-1.59-2.59-3.99-2.07-6.51.43-2.09,2.06-3.95,4.37-4.81,4.29-1.59,11.17-1.39,13.77,3.17.58,1.01.82,2.23.4,3.27-.39.96-1.25,1.42-2.11,1.46-2.35.1-2.28-3.23-4.4-4.37-2.59-1.39-7.21-.49-7.31,2.31-.19,5.13,14.8,1.91,15.16,11.3h0ZM216.99,90.97l-10.47-.07c-.87,2.03-1.27,3.97-2.38,5.74-.67,1.07-2.21.97-3.1.44-1.05-.62-1.5-1.92-1.01-3.17l8.1-20.59c.62-1.57,1.85-2.45,3.33-2.51,1.59-.07,3.08.63,3.75,2.28l8.32,20.6c.53,1.32.17,2.67-.88,3.34-1.11.71-2.72.59-3.43-.65-.94-1.65-1.46-3.33-2.22-5.41h0ZM215.45,86.83l-3.77-10.23-3.78,10.35,7.55-.11h0ZM357.61,90.94l-10.42-.05c-.89,1.9-1.28,3.87-2.35,5.66-.65,1.08-2.09,1.11-3.06.58-1.07-.58-1.65-1.87-1.13-3.17l8.09-20.58c.62-1.57,1.8-2.5,3.29-2.57,1.58-.08,3.13.58,3.79,2.23l8.33,20.6c.55,1.37.21,2.67-.9,3.39-1.09.7-2.71.58-3.42-.69-.93-1.66-1.45-3.35-2.21-5.4h0ZM356.11,86.86l-3.81-10.26-3.75,10.33,7.56-.07h0ZM170.11,90.95l-10.42-.06c-.89,1.89-1.28,3.87-2.35,5.66-.68,1.14-2.23,1.11-3.19.51-1.09-.68-1.47-1.94-.95-3.26l8.03-20.42c.65-1.65,1.9-2.56,3.5-2.58,1.58-.02,2.99.75,3.65,2.4l8.25,20.45c.55,1.36.21,2.67-.9,3.39-1.08.7-2.71.58-3.42-.69-.93-1.66-1.45-3.35-2.21-5.41h0ZM168.63,86.91l-3.84-10.32-3.76,10.35,7.6-.04h0ZM199.52,74.24l-7.64,20.72c-.6,1.62-1.95,2.48-3.47,2.51-1.63.03-3.01-.89-3.63-2.58l-7.52-20.48c-.56-1.53.18-3.03,1.5-3.45,1.69-.54,2.88.26,3.44,1.92l6.27,18.27,6.29-18.39c.41-1.49,1.64-2.23,3.11-1.85,1.22.32,2.24,1.72,1.65,3.33h0ZM149.85,96.99h-13.72c-1.35,0-2.53-1-2.53-2.39l-.02-21.1c0-1.63,1.16-2.7,2.6-2.69,1.44,0,2.62,1.06,2.62,2.7l.06,19.19,11.14.05c1.2,0,1.95,1.06,1.99,2.06.04,1.05-.76,2.17-2.14,2.17h0ZM336.61,94.58c0,1.74-1.09,2.84-2.54,2.88-1.34.05-2.67-.95-2.68-2.57v-21.43c-.01-1.6,1.13-2.61,2.47-2.65,1.45-.05,2.73.99,2.73,2.65l.02,21.12h0ZM335.11,67.92c-2.1,2.1-4.88,1.94-4.19.66,1-1.84,1.77-4.1,3.52-4.05,1.23.03,2.43-.15,3.72.13-.78,1.37-2,2.21-3.06,3.26h0Z" />
+                          </svg></h3>
+                          <p>
+                        Lavandería industrial a tú medida, administración de ropería y la mayor tecnología para el cuidado de tus prendas, tu
+                        negocio y del medio ambiente.
+                          </p>
+
+                      </div>
+                      <div class="col">
+                        <h3 class="t-h3 mb-4">MENÚ</h3>
+                        <ul class="list-unstyled footer-links">
+                          <li><a href="#">Inicio</a></li>
+                          <li><a href="#">Nosotros</a></li>
+                          <li><a href="#">Servicios</a></li>
+                          <li><a href="#">Preguntas Frecuentes</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Contacto</a></li>
+                        </ul>
+                      </div>
+                        <div class="col">
+                          <h3 class="t-h3 mb-4">SERVICIOS</h3>
+                          <ul class="list-unstyled footer-links">
+                            <li><a href="#">Lavado Industrial</a></li>
+                            <li><a href="#">Administración de Ropería</a></li>
+                            <li><a href="#">Smart Cabinet</a></li>
+                           </ul>
+                        </div>
+                            <div class="col">
+                              <h3 class="t-h3 mb-4">CONTACTO</h3>
+                            <ul class="list-unstyled footer-links">
+                              <li class=" mb-3">
+                        <i class="bi bi-geo-alt-fill"></i>
+                                Obispo Arturo Espinoza Campos 2686, Macul, Santiago, Chile
+                              </li>
+                              <li class=" mb-3">
+                                <i class="bi bi-telephone me-2"></i>
+                                (+56) 9 7548 4039
+                              </li>
+                              <li class=" mb-3">
+                                <i class="bi bi-envelope me-2"></i>
+                                <a href="mailto:info@ncslavanderias.cl">info@ncslavanderias.cl</a>
+                              </li>
+                            </ul>
+                            </div>
+</div>
+                    </div>
+                    <div class="text-center mt-4">
+                      <p>&copy; 2026 NCS Lavanderías. Todos los derechos reservados.</br> Desarrollado por <a href="https://www.maggiore.cl" target="_blank">Maggiore</a></p>
+                  </footer>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+  </body>
+</html>
